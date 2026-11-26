@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipper 2.0 — long videos into vertical clips</title>
+<style>
+  :root { --ink:#1d1a17; --dim:#6b625a; --line:#e8e2db; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#faf7f3; color:var(--ink);
+         font:16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:56px 24px 80px; }
+  .brand { display:flex; align-items:center; gap:12px; margin-bottom:44px; }
+  .mark { width:44px; height:44px; border-radius:12px; background:linear-gradient(180deg,#ffaa60,#ff7618);
+          display:flex; align-items:center; justify-content:center; }
+  .mark svg { width:24px; height:24px; }
+  .brand b { font-size:20px; }
+  h1 { font-size:40px; line-height:1.12; margin:0 0 14px; letter-spacing:-.5px; }
+  .lead { font-size:18px; color:var(--dim); max-width:640px; margin:0 0 36px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:34px 0; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:20px 22px; }
+  .card b { display:block; margin-bottom:6px; }
+  .card span { color:var(--dim); font-size:14.5px; }
+  .note { background:#fff3e6; border:1px solid #ffd6ad; border-radius:14px; padding:16px 20px; font-size:14.5px; }
+  a { color:#c25a00; }
+  footer { margin-top:52px; padding-top:18px; border-top:1px solid var(--line); color:var(--dim); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="mark"><svg viewBox="0 0 24 24" fill="#fff"><path d="M14.5 2 5 14h5l-1.5 8L19 10h-5.2L14.5 2z"/></svg></div>
+    <b>Clipper 2.0</b>
+  </div>
+
+  <h1>Long videos become vertical clips.</h1>
+  <p class="lead">A Windows desktop app that finds the strongest moments in long videos and streams,
+  cuts them into 9:16 clips with captions, and publishes them to TikTok, YouTube Shorts and Instagram
+  Reels through official APIs — after you approve each clip.</p>
+
+  <div class="grid">
+    <div class="card"><b>Finds the moments</b><span>Transcript, hooks and scene analysis pick the parts worth posting.</span></div>
+    <div class="card"><b>Keeps faces in frame</b><span>Face-aware cropping keeps the speaker centred in vertical video.</span></div>
+    <div class="card"><b>Captions that fit</b><span>Burned-in subtitles with fonts, colours and live preview of the final frame.</span></div>
+    <div class="card"><b>Publishes with consent</b><span>Private by default; nothing leaves the computer until you press publish.</span></div>
+  </div>
+
+  <div class="note">Runs locally on Windows. Video is processed on your computer; cloud speech recognition
+  and AI moment selection are optional and can be turned off.</div>
+
+  <footer>
+    Clipper 2.0 · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
